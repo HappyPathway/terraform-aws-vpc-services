@@ -10,7 +10,7 @@ def main(region):
     out, err = p.communicate()
     if err:
         return err
-    json.loads(out) 
+    return json.loads(out) 
     
 args = json.loads(stdin.read())
 print(
