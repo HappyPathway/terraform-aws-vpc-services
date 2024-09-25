@@ -7,8 +7,8 @@ locals {
 }
 
 data "aws_vpc_endpoint_service" "service" {
-  for_each = toset(local.services)
-  service  = each.value
+  for_each     = toset(local.services)
+  service      = each.value
   service_type = "Interface"
 }
 
