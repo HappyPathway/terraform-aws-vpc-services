@@ -6,12 +6,13 @@ locals {
   services = jsondecode(data.local_file.services.content).services
 }
 
-data "aws_vpc_endpoint_service" "service" {
-  for_each     = toset(local.services)
-  service      = each.value
-  service_type = "Interface"
+# Create a VPC endpoint
+resource "aws_vpc_endpoint" "ep" {
+  for_each = toset(local.services)
+  vpc_id       = var.vpc_id
+  service_name = each.value
 }
 
 output "service" {
-  value = data.aws_vpc_endpoint_service.service
+  value = aws_vpc_endpoint.ep
 }
