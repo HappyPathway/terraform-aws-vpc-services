@@ -12,6 +12,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.68.0 |
 | <a name="provider_local"></a> [local](#provider\_local) | 2.5.2 |
 
 ## Modules
@@ -22,7 +23,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [local_file.example](https://registry.terraform.io/providers/hashicorp/local/latest/docs/data-sources/file) | data source |
+| [aws_vpc_endpoint_service.service](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/vpc_endpoint_service) | data source |
+| [local_file.services](https://registry.terraform.io/providers/hashicorp/local/latest/docs/data-sources/file) | data source |
 
 ## Inputs
 
@@ -33,5 +35,7 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_service"></a> [service](#output\_service) | n/a |
 <!-- END_TF_DOCS -->
