@@ -6,3 +6,7 @@ variable "region" {
 variable "services" {
   description = "Input file for listed services"
 }
+
+variable vpc_id {
+  type = string
+}
