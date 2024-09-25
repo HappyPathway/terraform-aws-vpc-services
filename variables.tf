@@ -7,6 +7,6 @@ variable "services" {
   description = "Input file for listed services"
 }
 
-variable vpc_id {
+variable "vpc_id" {
   type = string
 }
