@@ -10,7 +10,9 @@ def main(region):
     out, err = p.communicate()
     if err:
         return err
-    return out
+    return dict(
+        services=out
+    )
     
 args = json.loads(stdin.read())
 print(
