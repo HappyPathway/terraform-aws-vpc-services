@@ -3,7 +3,7 @@ data "local_file" "services" {
 }
 
 locals {
-  services = jsondecode(data.local_file.services.content)
+  services = jsondecode(data.local_file.services.content).services
 }
 
 data "aws_vpc_endpoint_service" "service" {
