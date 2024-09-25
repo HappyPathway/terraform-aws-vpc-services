@@ -7,7 +7,7 @@ locals {
 }
 
 data "aws_vpc_endpoint_service" "service" {
-  for_each = local.services
+  for_each = toset(local.services)
   service  = each.value
 }
 
