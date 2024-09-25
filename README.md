@@ -10,9 +10,7 @@ No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_external"></a> [external](#provider\_external) | 2.3.4 |
+No providers.
 
 ## Modules
 
@@ -20,9 +18,7 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [external_external.get_services](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/external) | data source |
+No resources.
 
 ## Inputs
 
@@ -32,7 +28,5 @@ No modules.
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_services"></a> [services](#output\_services) | n/a |
+No outputs.
 <!-- END_TF_DOCS -->
